@@ -9,7 +9,7 @@ python-dateutil = "*"
 bs4 = "*"
 requests = "*"
 gunicorn = "*"
-uvicorn = "*"
+uvicorn = {extras = ["standard"], version = "*"}
 
 [dev-packages]
 autopep8 = "*"
