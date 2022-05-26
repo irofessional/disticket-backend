@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 fastapi = "*"
+python-dateutil = "*"
+bs4 = "*"
+requests = "*"
 
 [dev-packages]
 
