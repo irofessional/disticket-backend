@@ -1,17 +1,18 @@
 import re
 
+
 def delete_brackets(self, str_: str) -> str:
     # From https://qiita.com/s2hap/items/d6714b659a9f595bcac8
     table = {
-           "(": "（",
-            ")": "）",
-            "<": "＜",
-            ">": "＞",
-            "{": "｛",
-            "}": "｝",
-            "[": "［",
-            "]": "］"
-           }
+        "(": "（",
+        ")": "）",
+        "<": "＜",
+        ">": "＞",
+        "{": "｛",
+        "}": "｝",
+        "[": "［",
+        "]": "］"
+    }
     for key in table.keys():
         str_ = str_.replace(key, table[key])
         l = ['（[^（|^）]*）', '【[^【|^】]*】', '＜[^＜|^＞]*＞', '［[^［|^］]*］',

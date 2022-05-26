@@ -18,6 +18,7 @@ async def get_detail(req: request_schema.Request):
     else:
         raise HTTPException(status_code=404, detail="Invalid Site")
 
+
 @router.get("/v1/test")
 async def test(req: request_schema.Request):
     print(req.url)
